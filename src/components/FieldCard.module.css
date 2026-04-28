@@ -1,0 +1,101 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+
+.card:hover {
+  border-color: var(--border2);
+}
+
+.card.selected {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.card.dropAbove {
+  border-top: 2px solid var(--accent);
+}
+
+.card.dropBelow {
+  border-bottom: 2px solid var(--accent);
+}
+
+.card.dragging {
+  opacity: 0.4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.typeIcon {
+  font-size: 13px;
+}
+
+.typeBadge {
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-size: 10px;
+  color: var(--text3);
+  font-family: 'DM Mono', monospace;
+}
+
+.reqBadge {
+  font-size: 10px;
+  color: var(--red);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.card:hover .actions,
+.card.selected .actions {
+  opacity: 1;
+}
+
+.actionBtn {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text2);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s;
+}
+
+.actionBtn:hover {
+  background: var(--surface3);
+  color: var(--text);
+}
+
+.actionBtn.danger:hover {
+  background: var(--red-bg);
+  border-color: var(--red);
+  color: var(--red);
+}

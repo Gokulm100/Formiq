@@ -1,0 +1,67 @@
+.wrap {
+  pointer-events: none;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.req {
+  color: var(--red);
+  margin-left: 3px;
+}
+
+.input {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  color: var(--text2);
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+}
+
+.sectionHeader {
+  pointer-events: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border2);
+}
+
+.sectionHeader h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sectionHeader p {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 3px;
+}
+
+.choiceList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.help {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 5px;
+}
